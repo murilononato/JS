@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicks</title>
+
+    <style>
+
+        div#quadrado{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(137, 141, 140);
+            line-height: 200px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 30px;
+           margin-bottom: 20px;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <div id="quadrado">quadrado</div>
+    <input type="button" value="Reset" id="btn">
+
+    <script>
+        var a = window.document.getElementById('quadrado')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        
+        var b = window.document.getElementById('btn')
+        b.addEventListener('mouseup' , reset)
+
+
+        function clicar(){
+            // var a = window.document.getElementById('quadrado')
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+
+        function entrou(){
+            // var a = window.document.getElementById('quadrado')
+            a.innerText = 'Entrou'
+            a.style.background = '#00cc22'
+        }
+
+        function saiu(){
+            // var a = window.document.getElementById('quadrado')
+            a.innerText = 'Saiu'
+            a.style.background = 'orange'
+        }
+
+        
+        function reset(){
+            // var a = window.document.getElementById('quadrado')
+            a.innerText = 'Resetou'
+            a.style.background = 'grey'
+        }
+    </script>
+
+</body>
+</html>

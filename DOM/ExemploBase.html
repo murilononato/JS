@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(35, 136, 170);
+        color: aliceblue;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+    }
+</style>
+
+<body>
+    <!-- DOM = Document Object Model -->
+
+    <h1>Estudando o DOM</h1>
+
+    <p>primeiro exemplo com <strong>DOM</strong></p>
+
+    <p>Segundo Ememplo com <strong>DOM</strong></p>
+
+    <div id="ola">ola</div>
+
+    <br>
+
+    <div id="tchau">tchau</div>
+
+    <hr><br>
+
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[0] /*O tipo de elemento é o p porem o primeiro elemento [0] */
+
+        window.document.write('Está escrito : ' + p1.innerText + '<br/> <br/>') /*pega o texto e não o html ou seja o strong por se tratar de html n aparece em negrito*/
+
+        window.document.write('Está escrito : ' + p1.innerHTML + '<br/> <br/>') /*Diferente do innerHTML*/
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+
+        p2.style.color = 'blue'
+
+        var p3 = window.document.getElementsByTagName('h1')[0]
+   
+        window.document.write('Está escrito : ' + p3.innerHTML + '<br/> <br/>')
+
+        var corpo = window.document.body
+
+        corpo.style.background = 'green'
+
+        var d = window.document.getElementById('ola')
+
+        d.innerText = 'Olá estou vendo DOM' /*
+
+
+        Forma mais simples de escrever 
+      
+        var d = window.document.getElementById('div').innerText = 'Olá estou vendo DOM'
+
+        */
+
+        d.style.background = '#f33f02'
+
+        var d1 = window.document.querySelector('div#tchau')
+
+        d1.innerText = 'Até mais tarde!'
+
+
+    </script>
+
+</body>
+</html>
