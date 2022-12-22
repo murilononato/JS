@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Detector de pessoas</h1>
+    </header>
+    <section>
+        <div>
+            <label for="iAno">Qual ano voce nasceu?</label>
+            <input type="number" name="iAno" id="iAno">
+        </div>
+        <div>
+            <input type="radio" name="sexo" id="iMasc" checked>
+            <label for="iMasc">Masculino</label>
+            <br><br>
+            <input type="radio" name="sexo" id="iFem">
+            <label for="iFem">Feminino</label>
+        </div>
+        <hr>
+        <div id="res">
+
+        </div>
+
+        <hr>
+        
+        <div>
+            <input type="button" value="Verifica" onclick="Verifica()">
+        </div>
+       
+    </section>
+</body>
+</html>
