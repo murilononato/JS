@@ -1,0 +1,13 @@
+let num = [2,3,4,5,6]
+
+for(let pos in num){
+    console.log(`O ${pos}º numero é: ${num[pos]}`)
+}
+console.log('')
+
+/*Não faça forma errada */
+
+for(let pos in num){
+    pos++
+    console.log(`O ${pos}º numero é: ${num[pos]}`)
+}
