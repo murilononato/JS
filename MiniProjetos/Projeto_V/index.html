@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Lista</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Valores</h1>
+    </header>
+
+    <section>
+    <div>
+            <label for="iNumero">Digite um numero de (1 a 100)</label>
+            <input type="number" name="iNumero" id="iNumero">
+            <input type="button" value="Adicionar" onclick="add()">
+    </div>
+        <div>
+            <select name="Lista" id="iLista" size="10">
+                <option></option>
+            </select>
+        </div>
+            <div>
+                <input type="button" value="Finalizar" id="iFinaliza" onclick="Finaliza()">
+            </div>
+
+            <div id="iResultados">
+
+            </div>
+    </section>
+</body>
+</html>
