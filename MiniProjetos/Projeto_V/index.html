@@ -4,39 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio De Lista</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Lista</title>
 </head>
 <body>
     <header>
-        <h1>Lista de Valores</h1>
+        <h1>Titulo</h1>
     </header>
-
     <section>
         <div>
-            <label for="num">Digite um numero de (1 a 100)</label>
-            <input type="number" name="num" id="num">
+            DIGITE UM NUMERO DE 1 A 100
+            <input type="number" name="fnum" id="fnum" placeholder = "(max: 10)">
+            <input type="button" value="adicionar" onclick="adicionar()">
+            <br><br>
+            <select name="flista" id="flista" size="6"></select><br>
+            <input type="button" value="Finalizar" onclick="finalizar()">
         </div>
-            <div>
-                <input type="button" value="Adicionar" onclick="add()">
-            </div>
-       
-<div>
-    
-                <select name="Lista" id="iLista" size="10">
-                    <option></option>
-                </select>
-</div>
-
-                <div>
-                    <input type="button" value="Finalizar" id="iFinaliza" onclick="Finaliza()">
-                    <div id="res">
-                </div>
-
-                </div>
-   
+        <div id="res">
+        
+        </div>
     </section>
- 
+    <script src="script.js"></script>
 </body>
 </html>
